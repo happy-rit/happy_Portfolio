@@ -759,27 +759,31 @@ button:hover {
 }
 
 .skill-bar .bar .css {
-  width: 85%;
+  width: 80%;
 }
 
 .skill-bar .bar .js {
-  width: 85%;
+  width: 80%;
 }
 
 .skill-bar .bar .node {
-  width: 80%;
+  width: 90%;
 }
 
 .skill-bar .bar .express {
-  width: 80%;
+  width: 90%;
 }
 
 .skill-bar .bar .db {
-  width: 80%;
+  width: 90%;
+}
+
+.skill-bar .bar .sp {
+  width: 30%;
 }
 
 .skill-bar .bar .react {
-  width: 75%;
+  width: 70%;
 }
 
 .skill-bar .bar span::before {

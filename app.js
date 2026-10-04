@@ -1,13 +1,13 @@
 const text = document.querySelector(".sec-text");
 const textLoad = () => {
     setTimeout(() => {
-        text.textContent = "B.TECH Graduate";
+        text.textContent = "Bsc.IT Graduate";
     }, 0);
     setTimeout(() => {
-        text.textContent = "FrontEndDeveloper";
+        text.textContent = "BackEnd Developer";
     }, 4000);
     setTimeout(() => {
-        text.textContent = "FUllStackDeveloper";
+        text.textContent = "Java Developer";
     }, 8000);
 };
 textLoad();
@@ -18,11 +18,11 @@ readMore.addEventListener("click", function () {
     readMore.classList.toggle("clicked");
     if (readMore.classList.contains("clicked")) {
         aboutMeText.textContent =
-            "Hey there! I'm Manish, a B.TECH graduate and full-stack Java developer at Naresh i Technologies. I love turning ideas into functional websites and applications. Passionate about creativity and problem-solving, I thrive on crafting seamless user experiencesMy journey in technology began with a curiosity-driven exploration of programming languages and software development. Along the way, I've honed my skills in front-end and back-end technologies. I'm constantly seeking ways to innovate and elevate the digital experience.Outside of coding, you'll find me exploring the intersection of technology and design, experimenting with new frameworks, or immersing myself in the vibrant tech community. I thrive in collaborative environments and am always eager to learn from and share knowledge with fellow enthusiasts.";
+            "Hey there! I'm Harsh Kumar, a Bsc.IT graduate and Java developer. I love turning ideas into functional websites and applications. Passionate about creativity and problem-solving, I thrive on crafting seamless user experiencesMy journey in technology began with a curiosity-driven exploration of programming languages and software development. Along the way, I've honed my skills in front-end and back-end technologies. I'm constantly seeking ways to innovate and elevate the digital experience.Outside of coding, you'll find me exploring the intersection of technology and design, experimenting with new frameworks, or immersing myself in the vibrant tech community. I thrive in collaborative environments and am always eager to learn from and share knowledge with fellow enthusiasts.";
         readMore.textContent = "Read Less";
     } else {
         aboutMeText.textContent =
-            "Hey there! I'm Manish, a B.TECH graduate and full-stack Java developer at Naresh i Technologies. I love turning ideas into functional websites and applications. Passionate about creativity and problem-solving, I thrive on crafting seamless user experiences. Let's collaborate and bring your vision to life!...";
+            "Hey there! I'm Harsh Kumar, a Bsc.IT graduate and Java developer. I love turning ideas into functional websites and applications. Passionate about creativity and problem-solving, I thrive on crafting seamless user experiences. Let's collaborate and bring your vision to life!...";
         readMore.textContent = "Read More";
     }
 });
