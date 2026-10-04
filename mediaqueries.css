@@ -1,0 +1,373 @@
+/* =========================================================
+   RESPONSIVE DESIGN
+   ========================================================= */
+
+/* ---------- Large tablets / small laptops ---------- */
+@media screen and (max-width: 1100px) {
+  .nav-bar {
+    padding: 0 4%;
+  }
+
+  .nav-list {
+    gap: 1.5rem;
+  }
+
+  .home {
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    gap: 2rem;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .home .mypic {
+    width: min(100%, 480px);
+  }
+
+  .skill-content {
+    grid-column-gap: 2rem;
+  }
+}
+
+/* ---------- Tablets ---------- */
+@media screen and (max-width: 900px) {
+  .nav-list {
+    gap: 1rem;
+  }
+
+  .nav-list a {
+    font-size: 0.95rem;
+  }
+
+  .home {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+
+  .home .mypic {
+    width: min(100%, 420px);
+  }
+
+  .home-content .text-3 {
+    min-height: 3rem;
+  }
+
+  .about {
+    grid-template-columns: 1fr;
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+
+  .about .about-image {
+    order: -1;
+    width: min(80%, 400px);
+  }
+
+  .about .about-content {
+    width: 100%;
+  }
+
+  .skill-content {
+    grid-template-columns: 1fr;
+    width: min(750px, 100%);
+  }
+
+  .skill-bar {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .proj-img {
+    width: calc((100% - 1.2rem) / 2);
+  }
+}
+
+/* ---------- Mobile navigation ---------- */
+@media screen and (max-width: 700px) {
+  .nav-bar {
+    height: 68px;
+    padding: 0 5%;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  .nav-bar .hamburg-menu {
+    display: block;
+  }
+
+  .home {
+    min-height: auto;
+    padding: 105px 7% 65px;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    text-align: center;
+  }
+
+  .home .mypic {
+    width: min(82vw, 390px);
+    order: -1;
+  }
+
+  .home-content {
+    max-width: 650px;
+  }
+
+  .home-content .text-3 {
+    justify-content: center;
+  }
+
+  .home-content .email {
+    margin-top: 1rem;
+  }
+
+  .home-content .btns {
+    justify-content: center;
+  }
+
+  .follow-text {
+    margin-top: 2rem;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .about {
+    padding: 85px 6% 60px;
+  }
+
+  .about .about-image {
+    width: min(75vw, 350px);
+  }
+
+  .skills {
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+
+  .prof .prof-skills {
+    gap: 0;
+  }
+
+  .project {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+
+  .proj-list-container {
+    padding: 0 2.8rem;
+  }
+
+  .proj-img {
+    width: 80%;
+    min-width: 80%;
+  }
+
+  .contact {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+}
+
+/* ---------- Small mobile ---------- */
+@media screen and (max-width: 530px) {
+  .nav-bar {
+    height: 64px;
+  }
+
+  #logo {
+    font-size: 1.35rem;
+  }
+
+  .home {
+    padding-top: 90px;
+  }
+
+  .home .mypic {
+    width: min(78vw, 330px);
+  }
+
+  .home .mypic img {
+    border-width: 5px;
+  }
+
+  .home-content .text-2 {
+    font-size: clamp(2.25rem, 11vw, 3.2rem);
+  }
+
+  .home-content .text-3 {
+    display: block;
+    min-height: 4.5rem;
+    font-size: 1.1rem;
+  }
+
+  .home-content .text-3 .first-text {
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+
+  .home-content .text-3 .sec-text {
+    font-size: clamp(1.35rem, 7vw, 2rem);
+  }
+
+  .home-content .btns {
+    gap: 0.8rem;
+  }
+
+  button {
+    min-width: 145px;
+    height: 48px;
+    padding: 0 1rem;
+    font-size: 0.9rem;
+  }
+
+  .about .about-content {
+    padding: 1.3rem;
+  }
+
+  .about .aboutme {
+    font-size: 0.95rem;
+    line-height: 1.75;
+  }
+
+  .skills {
+    padding-top: 85px;
+  }
+
+  .prof .outer-circle {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .prof .inner-circle {
+    width: 6.4rem;
+    height: 6.4rem;
+  }
+
+  .prof .box {
+    height: 4rem;
+    width: 4rem;
+  }
+
+  .box-bottom-left {
+    top: 4rem;
+  }
+
+  .box-top-right {
+    left: 4rem;
+  }
+
+  .box-bottom-right {
+    left: 4rem;
+    top: 4rem;
+  }
+
+  .project {
+    padding-top: 85px;
+  }
+
+  .proj-list-container {
+    padding: 0 2.4rem;
+  }
+
+  .proj-img {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  #prev-btn,
+  #next-btn {
+    width: 42px;
+    height: 42px;
+    line-height: 38px;
+    font-size: 0.9rem;
+  }
+
+  .contact {
+    padding-top: 85px;
+  }
+
+  form {
+    padding: 1rem;
+  }
+}
+
+/* ---------- Very small phones ---------- */
+@media screen and (max-width: 400px) {
+  .home {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .home .mypic {
+    width: 280px;
+  }
+
+  .home-content .text-2 {
+    font-size: 2.1rem;
+  }
+
+  .home-content .text-3 .sec-text {
+    font-size: 1.35rem;
+  }
+
+  .home-content .email {
+    font-size: 0.9rem;
+    word-break: break-word;
+  }
+
+  .home-content .btns {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  button {
+    width: 85%;
+    max-width: 250px;
+  }
+
+  .about .about-image {
+    width: 80%;
+  }
+
+  .prof .outer-circle {
+    width: 7.5rem;
+    height: 7.5rem;
+  }
+
+  .prof .inner-circle {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .skill-name {
+    font-size: 0.72rem;
+  }
+
+  .proj-list-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  #prev-btn {
+    left: 0;
+  }
+
+  #next-btn {
+    right: 0;
+  }
+}
+
+/* ---------- Accessibility / reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
